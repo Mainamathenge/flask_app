@@ -192,9 +192,6 @@ if __name__ == '__main__':
 #     client.connect('localhost')
     client.on_connect = on_connect
     client.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
-    client.username_pw_set("MainaMathenge", "12345678")
-    client.connect("bb3d53a7e0b941edbd4f657916fb2c0a.s2.eu.hivemq.cloud", 8883)
-    #client.connect("bb3d53a7e0b941edbd4f657916fb2c0a.s2.eu.hivemq.cloud", 8883)
     client.loop_start()
 
     app.run(host='0.0.0.0', port=port)
